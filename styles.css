@@ -1,0 +1,412 @@
+/* Reset body margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Include padding and borders in element's total width and height */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Apply box-sizing to all elements */
+}
+
+/* Make Price, Total, and Pay Mode columns bold */
+.orders-table .order-item.price,
+.orders-table .order-item.quantity,
+.orders-table .order-item.total,
+.orders-table .order-item.pay-mode {
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* Header styles */
+.header {
+  background-color: #2A2869;
+  color: #FFFFFF;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  animation: marquee 15s linear infinite;
+}
+
+.header-item {
+  padding: 0 10px;
+}
+
+.divider-vertical {
+  border-left: 2px solid #FFFFFF;
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #FFFFFF;
+}
+
+.logo {
+  height: 40px; 
+  margin-right: 15px; 
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  list-style-type: none;
+  margin: 0;
+  flex-wrap: wrap; 
+}
+
+.navbar-item {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.navbar-item a {
+  color: #444444;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-icons{
+  color:black;
+}
+.bold-icon {
+  color: #444444; 
+  margin-left: 5px; 
+}
+
+/* Navbar icons */
+.navbar-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* My Orders Section */
+.my-orders {
+  display: flex; 
+  padding: 20px; 
+  flex-wrap: wrap; 
+}
+
+.my-orders-image{
+  width:200%;
+}
+
+/* Sidebar Menu Styles */
+.sidebar-menu {
+  font-family: 'Outfit', sans-serif; /* Ensure you have the Outfit font loaded */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.77px;
+  color: #444444;
+  border: 1px solid #ddd; 
+  padding: 10px; 
+  width: 200px; 
+  height: 200px;
+  flex-shrink: 0; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  margin-right: 20px; 
+}
+
+/* Sidebar menu list styles */
+.sidebar-menu ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.sidebar-menu li {
+  display: flex; 
+  align-items: center; 
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-menu li:last-child {
+  border-bottom: none; 
+}
+
+.sidebar-menu a {
+  display: flex; 
+  align-items: center;
+  text-decoration: none; 
+  color: #444444; 
+  font-weight: bold;
+  padding: 8px 15px; /* Add padding inside the link instead of li */
+  width: 100%;
+}
+
+.sidebar-menu a i {
+  margin-right: 10px; 
+  color: #444444; 
+}
+
+
+/* Active and hover effect */
+/* Hover effect */
+.sidebar-menu a:hover {
+  color: #C60146;
+}
+
+.sidebar-menu a:hover i {
+  color: #C60146;
+}
+
+/* Active effect */
+.sidebar-menu a.active {
+  color: #C60146;
+}
+
+.sidebar-menu a.active i {
+  color: #C60146;
+}
+/* Orders Table Styles */
+.orders-table {
+  flex: 1; 
+  /* border: 1px solid #ddd;  */
+  padding: 10px; 
+}
+
+/* Adjust order row styles */
+
+.order-row {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 8px 0; 
+  border-bottom: 1px solid #ddd; 
+  align-items: center; 
+  font-family: 'Outfit', sans-serif; /* Ensure you have the Outfit font loaded */
+  font-size: 21.25px;
+  font-weight: 400;
+  line-height: 26.77px;
+  text-align: left;
+  color: #444444; /* Apply text color */
+}
+
+.order-item {
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+}
+
+.product-info {
+  display: flex; 
+  align-items: center; 
+}
+
+.product-image {
+  width: 100px;
+  height: 100px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+.product-details {
+  flex-direction: column; 
+  font-weight: 500; 
+  color: #333; 
+}
+
+.product-name {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: medium;
+}
+
+/* Style for the 300g Pack div */
+.pack-info {
+  background-color: black; /* Black background */
+  color: white; /* White text color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 0px 10px; /* Padding around the text */
+  display: inline-block; /* To allow width to fit the content */
+  margin-top: 5px; /* Optional: spacing above the div */
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.quantity {
+  font-family: 'Outfit', sans-serif; /* Ensure you have the Outfit font loaded */
+  font-size: 21.25px;
+  font-weight: 400;
+  line-height: 26.77px;
+  color: #444444; /* Apply text color */
+  padding: 5px 10px; /* Padding around the text */
+  display: inline-flex; /* Use flexbox to align items inline */
+  align-items: center; /* Center items vertically */
+  margin-top: 5px; /* Spacing above the div */
+  gap: 10px;
+}
+
+.quantity-icon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.plus-icon {
+  margin-left: 5px; /* Space between text and plus icon */
+  cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+.gram {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.remove-link {
+  color: #444444; /* Change the text color */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: small;
+}
+
+.remove-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .my-orders {
+    flex-direction: column; 
+    align-items: stretch; 
+  }
+
+  .sidebar-menu {
+    width: 100%; 
+    margin: 0; 
+    margin-bottom: 20px; /* Space below sidebar for smaller screens */
+  }
+
+  .orders-table {
+    margin-left: 20px; /* Add margin for better spacing on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .navbar-item {
+    padding: 8px; 
+  }
+
+  .my-orders {
+    flex-direction: column; 
+  }
+
+  .sidebar-menu {
+    width: 100%; 
+    margin: 0; 
+    margin-bottom: 20px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 5px 0; 
+  }
+
+  .header-item {
+    font-size: 14px; 
+  }
+
+  .navbar-menu {
+    padding: 5px 10px; 
+  }
+
+  .navbar-icons a {
+    font-size: 20px; 
+  }
+
+  .orders-table {
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+
+  .order-row {
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .order-item {
+    flex-direction: column; /* Stack items in order-row */
+    align-items: flex-start; /* Align items to the left */
+  }
+}
+.reorder-button {
+  padding: 10px 20px;
+  background-color: #C60146;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  min-width: 120px;
+}
+.refresh-image{
+  margin-right: 10px;
+  align-items: self-start;
+}
+.loading-icon,
+.finished-icon {
+  font-size: 20px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between icon and text */
+  display: none; /* Hidden by default */
+}
+
+/* Loading state styles */
+.reorder-button.loading {
+  background-color: #A60039; /* Darker color when loading */
+  pointer-events: none; /* Disable pointer events */
+}
+
+.reorder-button.loading .button-text {
+  display: none; /* Hide the button text when loading */
+}
+
+.reorder-button.loading .loading-icon {
+  display: inline; /* Show loading icon when loading */
+}
+
+.reorder-button.finished .loading-icon {
+  display: none; /* Hide loading icon when finished */
+}
+
+.reorder-button.finished .finished-icon {
+  display: inline; /* Show finished icon when action is done */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .reorder-button {
+      margin-left: 0; 
+      margin-top: 10px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .reorder-button {
+      font-size: 14px; 
+      padding: 8px 15px; 
+  }
+}
